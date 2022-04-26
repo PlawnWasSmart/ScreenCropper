@@ -4,7 +4,6 @@ import com.github.kwhat.jnativehook.keyboard.NativeKeyEvent;
 import com.github.kwhat.jnativehook.keyboard.NativeKeyListener;
 import me.plawn.screencropper.ScreenCropper;
 
-import java.awt.*;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -20,7 +19,7 @@ public class KeyBindListener implements NativeKeyListener {
     @Override
     public void nativeKeyPressed(NativeKeyEvent e) {
         pressing.add(e.getKeyCode());
-        if(pressing.containsAll(List.of(42,29,46))){
+        if(pressing.containsAll(List.of(56,29,46))){
             ScreenCropper.getCropper().crop();
         }
     }

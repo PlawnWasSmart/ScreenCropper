@@ -27,6 +27,7 @@ public class ScreenCropper {
 
         JPanel croppingPanel = new JPanel();
         croppingPanel.setBackground(new Color(0,0,0,50));
+        croppingPanel.setBorder(BorderFactory.createLineBorder(new Color(100,100,100),1));
 
         frame.add(croppingPanel);
 
